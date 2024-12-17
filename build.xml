@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="standard">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="C:/Users/9000682/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5/httpclient-4.3.5.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/io/appium/java-client/4.1.2/java-client-4.1.2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-java/2.53.1/selenium-java-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.53.1/selenium-chrome-driver-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.53.1/selenium-remote-driver-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.53.1/selenium-edge-driver-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.21/htmlunit-driver-2.21.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.21/htmlunit-2.21.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.21/neko-htmlunit-2.21.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.18/cssparser-0.9.18.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.15.v20160210/websocket-client-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/eclipse/jetty/jetty-util/9.2.15.v20160210/jetty-util-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/eclipse/jetty/jetty-io/9.2.15.v20160210/jetty-io-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.15.v20160210/websocket-common-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.15.v20160210/websocket-api-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.53.1/selenium-firefox-driver-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.1/selenium-ie-driver-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.53.1/selenium-safari-driver-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/io/netty/netty/3.5.7.Final/netty-3.5.7.Final.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-support/2.53.1/selenium-support-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.53.1/selenium-leg-rc-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/selenium-server/2.53.1/selenium-server-2.53.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20150730/jetty-repacked-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/server/selenium-server/1.0.1/selenium-server-1.0.1-standalone.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/core/selenium-core/1.0.1/selenium-core-1.0.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/server/selenium-server-coreless/1.0.1/selenium-server-coreless-1.0.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/ant/ant/1.7.1/ant-1.7.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/jetty/org.mortbay.jetty/5.1.12/org.mortbay.jetty-5.1.12.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/bouncycastle/bcprov-jdk15/135/bcprov-jdk15-135.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/server/selenium-server-coreless/1.0.1/selenium-server-coreless-1.0.1-javadoc.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/server/selenium-server-coreless/1.0.1/selenium-server-coreless-1.0.1-sources.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/server/selenium-server-coreless/1.0.1/selenium-server-coreless-1.0.1-tests.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/server/selenium-server-coreless/1.0.1/selenium-server-coreless-1.0.1-test-sources.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.1/selenium-java-client-driver-1.0.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.1/selenium-java-client-driver-1.0.1-javadoc.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.1/selenium-java-client-driver-1.0.1-sources.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.1/selenium-java-client-driver-1.0.1-tests.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/seleniumhq/selenium/client-drivers/selenium-java-client-driver/1.0.1/selenium-java-client-driver-1.0.1-test-sources.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/plugins/maven-surefire-report-plugin/2.5/maven-surefire-report-plugin-2.5.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.0.4.3/maven-reporting-impl-2.0.4.3.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-core/1.0/doxia-core-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.0/doxia-site-renderer-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.0/doxia-module-apt-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.0/doxia-module-fml-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.0/doxia-module-xdoc-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.0/doxia-module-xhtml-1.0.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar"/>
+        <pathelement location="C:/Users/9000682/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.9/plexus-utils-1.5.9.jar"/>
+    </path>
+    <path id="standard.classpath">
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+        <pathelement location="target/classes"/>
+    </path>
+    <path id="run.QA_DailyCheck_KT.classpath">
+        <path refid="standard.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.QA_DailyCheck_LGU.classpath">
+        <path refid="standard.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.QA_DailyCheck_SKT.classpath">
+        <path refid="standard.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.STG_DailyCheck_SKT.classpath">
+        <path refid="standard.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/test-classes"/>
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/test-classes"/>
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}" encoding="UTF-8">
+            <src path="src/test/java"/>
+            <classpath refid="standard.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}" encoding="UTF-8">
+            <src path="src/main/java"/>
+            <classpath refid="standard.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="QA_DailyCheck_KT">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="QA_Dailycheck.QA_DailyCheck_KT" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.QA_DailyCheck_KT.classpath"/>
+        </junit>
+    </target>
+    <target name="QA_DailyCheck_LGU">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="QA_Dailycheck.QA_DailyCheck_LGU" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.QA_DailyCheck_LGU.classpath"/>
+        </junit>
+    </target>
+    <target name="QA_DailyCheck_SKT">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="QA_Dailycheck.QA_DailyCheck_SKT" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.QA_DailyCheck_SKT.classpath"/>
+        </junit>
+    </target>
+    <target name="STG_DailyCheck_SKT">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="STG_Dailycheck.STG_DailyCheck_SKT" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.STG_DailyCheck_SKT.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
